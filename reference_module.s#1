@@ -16533,6 +16533,7 @@ NS Package M08A</description>
 <part name="C11" library="amit_rcl" deviceset="C-EU" device="102-054X133" value="0.1UF/100V"/>
 <part name="C15" library="amit_rcl" deviceset="C-EU" device="102-054X133" value="0.1UF/100V"/>
 <part name="C16" library="amit_rcl" deviceset="C-EU" device="102-054X133" value="0.1UF/100V"/>
+<part name="C17" library="amit_rcl" deviceset="C-EU" device="102-054X133" value="0.1UF/100V"/>
 </parts>
 <sheets>
 <sheet>
@@ -16672,6 +16673,7 @@ NS Package M08A</description>
 <instance part="C11" gate="G$1" x="170.18" y="55.88" rot="R90"/>
 <instance part="C15" gate="G$1" x="238.76" y="76.2" rot="R90"/>
 <instance part="C16" gate="G$1" x="243.84" y="86.36" rot="R90"/>
+<instance part="C17" gate="G$1" x="175.26" y="48.26" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -17324,12 +17326,16 @@ NS Package M08A</description>
 <pinref part="R18" gate="G$1" pin="1"/>
 <wire x1="157.48" y1="66.04" x2="165.1" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="38.1" x2="165.1" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="38.1" x2="165.1" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="48.26" x2="165.1" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="55.88" x2="165.1" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="55.88" x2="165.1" y2="55.88" width="0.1524" layer="91"/>
 <junction x="165.1" y="66.04"/>
 <junction x="165.1" y="55.88"/>
 <pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="C17" gate="G$1" pin="1"/>
+<wire x1="172.72" y1="48.26" x2="165.1" y2="48.26" width="0.1524" layer="91"/>
+<junction x="165.1" y="48.26"/>
 </segment>
 </net>
 <net name="N$50" class="0">
@@ -17393,10 +17399,14 @@ NS Package M08A</description>
 <junction x="182.88" y="43.18"/>
 <wire x1="182.88" y1="43.18" x2="172.72" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="43.18" x2="172.72" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="55.88" x2="187.96" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="55.88" x2="187.96" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="ZD5" gate="G$1" pin="A"/>
+<wire x1="187.96" y1="48.26" x2="187.96" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="55.88" x2="200.66" y2="55.88" width="0.1524" layer="91"/>
 <junction x="187.96" y="55.88"/>
+<pinref part="C17" gate="G$1" pin="2"/>
+<wire x1="180.34" y1="48.26" x2="187.96" y2="48.26" width="0.1524" layer="91"/>
+<junction x="187.96" y="48.26"/>
 </segment>
 </net>
 <net name="N$55" class="0">

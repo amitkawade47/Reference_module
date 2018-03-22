@@ -16527,11 +16527,11 @@ NS Package M08A</description>
 <part name="ZD4" library="amit_diode_1N4004" deviceset="ZENER-DIODE" device="ZD-10" value="10V/400MW"/>
 <part name="ZD5" library="amit_diode_1N4004" deviceset="ZENER-DIODE" device="ZD-10" value="10V/400MW"/>
 <part name="ZD6" library="amit_diode_1N4004" deviceset="ZENER-DIODE" device="ZD-10" value="10V/400MW"/>
-<part name="C11" library="amit_rcl" deviceset="CPOL-US" device="E3.5-10" value="1UF/63V"/>
-<part name="C15" library="amit_rcl" deviceset="CPOL-US" device="E3.5-10" value="1UF/63V"/>
 <part name="IC2" library="amit_linear_OP_AMP" deviceset="*741" device="P" technology="LM"/>
 <part name="IC3" library="amit_linear_OP_AMP" deviceset="*741" device="P" technology="LM"/>
 <part name="F1" library="special" deviceset="FUSE" device=""/>
+<part name="C11" library="amit_rcl" deviceset="C-EU" device="102-054X133" value="0.1UF/100V"/>
+<part name="C15" library="amit_rcl" deviceset="C-EU" device="102-054X133" value="0.1UF/100V"/>
 </parts>
 <sheets>
 <sheet>
@@ -16665,11 +16665,11 @@ NS Package M08A</description>
 <instance part="ZD5" gate="G$1" x="203.2" y="55.88"/>
 <instance part="ZD6" gate="G$1" x="213.36" y="55.88" rot="R180"/>
 <instance part="IC1" gate="D" x="53.34" y="-83.82" rot="R180"/>
-<instance part="C11" gate="G$1" x="170.18" y="55.88" rot="R90"/>
-<instance part="C15" gate="G$1" x="238.76" y="76.2" rot="R90"/>
 <instance part="IC2" gate="A" x="208.28" y="40.64" rot="MR180"/>
 <instance part="IC3" gate="A" x="195.58" y="10.16" rot="R180"/>
 <instance part="F1" gate="G$1" x="2.54" y="71.12"/>
+<instance part="C11" gate="G$1" x="170.18" y="55.88" rot="R90"/>
+<instance part="C15" gate="G$1" x="238.76" y="76.2" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -17335,18 +17335,18 @@ NS Package M08A</description>
 <wire x1="157.48" y1="66.04" x2="165.1" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="38.1" x2="165.1" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="C11" gate="G$1" pin="+"/>
 <wire x1="165.1" y1="55.88" x2="165.1" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="55.88" x2="165.1" y2="55.88" width="0.1524" layer="91"/>
 <junction x="165.1" y="66.04"/>
 <junction x="165.1" y="55.88"/>
+<pinref part="C11" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$49" class="0">
 <segment>
-<pinref part="C11" gate="G$1" pin="-"/>
 <pinref part="S1" gate="-4" pin="1"/>
 <wire x1="175.26" y1="55.88" x2="177.8" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$50" class="0">
@@ -17424,21 +17424,21 @@ NS Package M08A</description>
 <wire x1="213.36" y1="81.28" x2="220.98" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="81.28" x2="220.98" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="86.36" x2="236.22" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="C15" gate="G$1" pin="+"/>
 <wire x1="236.22" y1="86.36" x2="241.3" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="86.36" x2="236.22" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="76.2" x2="236.22" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="S1" gate="-1" pin="1"/>
+<wire x1="236.22" y1="76.2" x2="236.22" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="71.12" x2="246.38" y2="71.12" width="0.1524" layer="91"/>
-<junction x="236.22" y="76.2"/>
 <junction x="220.98" y="86.36"/>
 <junction x="236.22" y="86.36"/>
+<pinref part="C15" gate="G$1" pin="1"/>
+<junction x="236.22" y="76.2"/>
 </segment>
 </net>
 <net name="N$47" class="0">
 <segment>
-<pinref part="C15" gate="G$1" pin="-"/>
 <pinref part="S1" gate="-2" pin="1"/>
+<pinref part="C15" gate="G$1" pin="2"/>
 <wire x1="243.84" y1="76.2" x2="246.38" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
